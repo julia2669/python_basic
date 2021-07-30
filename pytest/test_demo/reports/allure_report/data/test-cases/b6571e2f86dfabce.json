@@ -1,0 +1,155 @@
+{
+  "uid" : "b6571e2f86dfabce",
+  "name" : "test_get_foo3",
+  "fullName" : "test_04_mock#test_get_foo3",
+  "historyId" : "c83e8ee72d704abe3d4dd8eba5473333",
+  "time" : {
+    "start" : 1627038117373,
+    "stop" : 1627038117375,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "statusMessage" : "ModuleNotFoundError: No module named 'demo_mock'",
+  "statusTrace" : "args = (), keywargs = {}\n\n    @wraps(func)\n    def patched(*args, **keywargs):\n        with self.decoration_helper(patched,\n                                    args,\n>                                   keywargs) as (newargs, newkeywargs):\n\n..\\..\\..\\..\\appdata\\local\\continuum\\anaconda3\\envs\\py37\\lib\\site-packages\\mock\\mock.py:1345: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\..\\..\\..\\appdata\\local\\continuum\\anaconda3\\envs\\py37\\lib\\contextlib.py:112: in __enter__\n    return next(self.gen)\n..\\..\\..\\..\\appdata\\local\\continuum\\anaconda3\\envs\\py37\\lib\\site-packages\\mock\\mock.py:1325: in decoration_helper\n    arg = exit_stack.enter_context(patching)\n..\\..\\..\\..\\appdata\\local\\continuum\\anaconda3\\envs\\py37\\lib\\contextlib.py:427: in enter_context\n    result = _cm_type.__enter__(cm)\n..\\..\\..\\..\\appdata\\local\\continuum\\anaconda3\\envs\\py37\\lib\\site-packages\\mock\\mock.py:1398: in __enter__\n    self.target = self.getter()\n..\\..\\..\\..\\appdata\\local\\continuum\\anaconda3\\envs\\py37\\lib\\site-packages\\mock\\mock.py:1573: in <lambda>\n    getter = lambda: _importer(target)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ntarget = 'demo_mock'\n\n    def _importer(target):\n        components = target.split('.')\n        import_path = components.pop(0)\n>       thing = __import__(import_path)\nE       ModuleNotFoundError: No module named 'demo_mock'\n\n..\\..\\..\\..\\appdata\\local\\continuum\\anaconda3\\envs\\py37\\lib\\site-packages\\mock\\mock.py:1245: ModuleNotFoundError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "no_requests",
+    "time" : {
+      "start" : 1627038117372,
+      "stop" : 1627038117373,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1627038104035,
+      "stop" : 1627038104035,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "monkeypatch",
+    "time" : {
+      "start" : 1627038117372,
+      "stop" : 1627038117372,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1627038104035,
+      "stop" : 1627038104035,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1627038117372,
+      "stop" : 1627038117372,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1627038104035,
+      "stop" : 1627038104035,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "monkeypatch::0",
+    "time" : {
+      "start" : 1627038117579,
+      "stop" : 1627038117580,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_04_mock"
+  }, {
+    "name" : "host",
+    "value" : "JULIZHOU-6JV5P"
+  }, {
+    "name" : "thread",
+    "value" : "18748-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_04_mock"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b6571e2f86dfabce.json",
+  "parameterValues" : [ ]
+}

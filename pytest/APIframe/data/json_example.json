@@ -1,0 +1,8 @@
+{
+  "dev": {
+    "host": "http://localhost",
+    "port": 8080,
+    "user": "julia",
+    "pwd": "julia123"
+  }
+}

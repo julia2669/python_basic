@@ -1,0 +1,20 @@
+该插件提供了两个命令行选项,用于重新运行上次pytest调用的失败：
+
+    --lf,--last-failed- 只重新运行故障。
+    --ff,--failed-first- 先运行故障然后再运行其余的测试。
+
+对于清理(通常不需要),--cache-clear选项允许在测试运行之前删除所有跨会话缓存内容。
+
+其他插件可以访问[config.cache对象以在调用之间设置/获取json可编码值pytest。
+此插件默认启用,但如果需要可以禁用：请参阅[按名称取消激活/取消注册插件(此插件的内部名称为cacheprovider
+
+上次运行中没有测试失败时的行为#
+
+如果在上次运行中没有测试失败,或者没有lastfailed找到缓存数据,pytest则可以使用该--last-failed-no-failures选项配置运行所有测试或不运行测试,该选项采用以下值之一：
+
+pytest --last-failed --last-failed-no-failures all    # run all tests (default behavior)
+pytest --last-failed --last-failed-no-failures none   # run no tests and exit
+
+插件或conftest.py支持代码可以使用pytestconfig对象获取缓存值。这是一个实现[pytest fixture的基本示例插件[：显式,模块化,可伸缩,它在pytest调用中重用以前创建的状态：
+
+你始终可以使用--cache-show命令行选项查看缓存的内容

@@ -1,0 +1,137 @@
+{
+  "uid" : "e9e2d0e84eb93500",
+  "name" : "test_num[1]",
+  "fullName" : "test_06_cache#test_num",
+  "historyId" : "68f86098b7096bbe62d93a4eae358176",
+  "time" : {
+    "start" : 1627038708869,
+    "stop" : 1627038708869,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1627038693755,
+      "stop" : 1627038693755,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1627038693755,
+      "stop" : 1627038693755,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1627038693755,
+      "stop" : 1627038693755,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1627038708868,
+      "stop" : 1627038708868,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_06_cache"
+  }, {
+    "name" : "host",
+    "value" : "JULIZHOU-6JV5P"
+  }, {
+    "name" : "thread",
+    "value" : "19824-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_06_cache"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "i",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "35835c8ff73763e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627038117839,
+        "stop" : 1627038117839,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3ace493cc7ac2412",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627037560138,
+        "stop" : 1627037560138,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9d755998f6d6b3e2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627036719846,
+        "stop" : 1627036719846,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e9e2d0e84eb93500.json",
+  "parameterValues" : [ "1" ]
+}

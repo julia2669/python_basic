@@ -1,0 +1,60 @@
+4、阻塞和await 使用async可以定义协程对象，使用await可以正对耗时操作进行挂起，就像生成器里的yield一样，函数让出控制权。
+协程遇到await，事件循环就会挂起这个协程，执行别协程，直到其他协程也挂起或执行完毕，在进行下一个协程的执行。
+
+如果一个对象可以在 await 语句中使用，那么它就是 可等待 对象。
+
+耗时操作一般指IO操作： 网络请求，文件读取等，使用asyncio.sleep模拟耗时操作。协程的目的也是让这些IO操作异步化。
+
+4-1、并发运行任务：
+asyncio.gather（* aws，loop = None，return_exceptions = False ） 同时在aws 序列中运行等待对象。
+
+    如果在aws中等待的是协程，它将自动调度为任务。
+    如果所有等待都成功完成，则结果是返回值的汇总列表。结果值的顺序对应于aws中的等待顺序。
+    如果return_exceptions是False（默认），则第一个引发的异常会立即传播到等待的任务gather()。aws序列 中的其他等待项将不会被取消并继续运行。
+    如果return_exceptions是True，异常的处理方式一样成功的结果，并在结果列表汇总。
+    如果gather()被取消，所有提交的awaitables（尚未完成）也被取消。
+    如果aws序列中的任何任务或未来被取消，则将其视为已引发CancelledError- 在这种情况下不会取消gather() 呼叫。
+    这是为了防止取消一个提交的任务/未来以导致其他任务/期货被取消。
+
+4-2、屏蔽取消操作：
+asyncio.shield(aw, * , loop=None) 保护一个 可等待对象 防止其被 取消。如果 aw 是一个协程，它将自动作为任务加入日程。
+
+    res = await shield(something()) 相当于: res = await something()
+
+不同之处在于如果包含它的协程被取消，在 something() 中运行的任务不会被取消。从 something() 的角度看来，取消操作并没有发生。
+然而其调用者已被取消，因此 “await” 表达式仍然会引发 CancelledError。
+
+    如果通过其他方式取消 something() (例如在其内部操作) 则 shield() 也会取消。
+
+    如果希望完全忽略取消操作 (不推荐) 则 shield() 函数需要配合一个 try/except 代码段，如下所示:
+
+try:
+    res = await shield(something())
+except CancelledError:
+    res = None
+
+4-3、超时：
+asyncio.wait_for(aw, timeout, * , loop=None) 等待 aw 可等待对象 完成，指定 timeout 秒数后超时。
+
+    如果 aw 是一个协程，它将自动作为任务加入日程。
+    timeout 可以为 None，也可以为 float 或 int 型数值表示的等待秒数。如果 timeout 为 None，则等待直到完成。
+        如果发生超时，任务将取消并引发 asyncio.TimeoutError.
+        要避免任务 取消，可以加上 shield()。函数将等待直到目标对象确实被取消，所以总等待时间可能超过 timeout 指定的秒数。
+        如果等待被取消，则 aw 指定的对象也会被取消。
+    loop 参数已弃用，计划在 Python 3.10 中移除。
+
+4-4、简单等待：
+asyncio.wait（aws，* , loop = None，timeout = None，return_when = ALL_COMPLETED ）
+同时运行aws中的等待对象 并阻塞 ，直到return_when指定的条件。
+
+    返回两组tasks/futures：（done，pending）
+    用法：done, pending = await asyncio.wait(aws)
+    return_when 指定此函数应在何时返回。它必须为以下常数之一:
+        FIRST_COMPLETED 函数将在任意可等待对象结束或取消时返回。
+        FIRST_EXCEPTION 函数将在任意可等待对象因引发异常而结束时返回。当没有引发任何异常时它就相当于 ALL_COMPLETED。
+        ALL_COMPLETED 函数将在所有可等待对象结束或取消时返回。
+        与 wait_for() 不同，wait() 在超时发生时不会取消可等待对象。
+
+asyncio.as_completed(aws, * , loop=None, timeout=None) 并发地运行 aws 集合中的 可等待对象。
+返回一个 Future 对象的迭代器。返回的每个 Future 对象代表来自剩余可等待对象集合的最早结果。
+如果在所有 Future 对象完成前发生超时则将引发 asyncio.TimeoutError。

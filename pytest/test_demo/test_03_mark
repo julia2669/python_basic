@@ -1,0 +1,36 @@
+一些常用的内置标记：
+    skip - 始终跳过该测试用例
+    skipif - 遇到特定情况跳过该测试用例
+    xfail - 遇到特定情况,产生一个“期望失败”输出 期望测试用例是失败的，但是不会影响测试用例的的执行,
+    parametrize - 在同一个测试用例上运行多次调用(译者注: 参数化数据驱动)
+      注意：
+      标记只对测试用例有效,对fixtures方法无效
+
+在未知标记上引发异常： -strict#
+
+当使用--strict命令行参数时,未在pytest.ini文件中注册的任何标记都将引发异常。
+
+标记可以通过以下方式注册：
+
+Copy
+[pytest]
+markers =
+    slow
+    serial
+
+这可用于防止用户意外输错标记名称。 想要强制执行此操作的测试套件应将--strict添加到addopts：
+
+Copy
+[pytest]
+addopts = --strict
+markers =
+    slow
+    seria
+
+
+注： pytest.xfail() 将该用例标记成xfail失败，并且该用例中的后续代码不会执行
+        def test_one(self,):
+                print("----start------")
+                pytest.xfail(reason='该功能尚未完成')
+                print("test_one方法执行" )
+                assert 1==1

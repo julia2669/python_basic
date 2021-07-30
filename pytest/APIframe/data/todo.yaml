@@ -1,0 +1,57 @@
+-
+  caseid: 01
+  desc: "get all items"
+  url: "http://localhost:3000/todoitem/"
+  method: get
+  expect:
+    status_code: 200
+    body:
+      - {
+          itemName: "add item in auto test",
+          id: 1,
+          status: "not complete"
+      }
+
+
+-
+  caseid: 02
+  desc: "add a todo item"
+  url: "http://localhost:3000/todoitem/"
+  method: post
+  body:
+    item: to learn python
+    status: not complete
+  expect:
+    status_code: 201
+    body:
+      item: to learn python
+      status: not complete
+      id: 2
+
+-
+  caseid: 03
+  desc: "update a todo item"
+  url: "http://localhost:3000/todoitem/2"
+  method: put
+  body:
+    item: to learn python
+    status: complete
+  expect:
+    status_code: 200
+    body:
+      item: to learn python
+      status: complete
+      id: 2
+
+-
+  caseid: 04
+  desc: "delete a todo item"
+  url: "http://localhost:3000/todoitem/2"
+  method: delete
+  body:
+    item: to learn python
+    status: complete
+  expect:
+    status_code: 200
+    body:
+      {}

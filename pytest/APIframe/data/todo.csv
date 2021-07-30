@@ -1,0 +1,30 @@
+﻿Project,Feature,User Story,Case ID,Priority,Risk(Severity ),Type,Method,URL,Name,Description,Pre Conditions,Request Body,Validation Expected Result,Owner,Notes
+ART/CEPM,ART/CEPM - 0001,ART/CEPM - 0002,1,Important,High,Functional,get,http://localhost:3000/todoitem/,get all to do items,get all to do items,add a todo item to todo list,,,julizhou@cisco.com,
+ART/CEPM,ART/CEPM - 0001,ART/CEPM - 0002,2,Important,High,Functional,post,http://localhost:3000/todoitem,add a todo item,add a todo item,,"{
+    ""body"": {
+        ""itemName"": ""add item in auto test"",
+        ""status"":""not complete""
+    }
+}","{
+    ""itemName"": ""add item in auto test"",
+    ""status"": ""not complete"",
+    ""id"": 5
+}",julizhou@cisco.com,
+ART/CEPM,ART/CEPM - 0001,ART/CEPM - 0002,3,Important,High,Functional,put,http://localhost:3000/todoitem/1,update a todo item status,update a todo item status,,"{
+    ""body"":{
+        ""itemName"": ""add item in auto test"",
+        ""status"":""complete""
+    },
+    ""params"": {
+        ""id"": 5
+    }
+}","{
+    ""itemName"": ""add item in auto test"",
+    ""status"": ""complete"",
+    ""id"": 5
+}",julizhou@cisco.com,
+ART/CEPM,ART/CEPM - 0001,ART/CEPM - 0002,4,Important,High,Functional,delete,http://localhost:3000/todoitem/1,delete a todo item,delete a todo item,,"{
+     ""params"": {
+        ""id"": 5
+    }
+}",,julizhou@cisco.com,

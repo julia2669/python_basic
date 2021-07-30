@@ -1,0 +1,155 @@
+{
+  "uid" : "49adac8d5cca8884",
+  "name" : "test_02",
+  "fullName" : "test_03_mark_for_allure.TestMark#test_02",
+  "historyId" : "361c21a93eba7f5aaadba821289727d2",
+  "time" : {
+    "start" : 1627038708251,
+    "stop" : 1627038708251,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: 传入参数非整数",
+  "statusTrace" : "self = <test_demo.test_03_mark_for_allure.TestMark object at 0x000001E1A8D3C2C8>\n\n    @allure.story(\"story: story in class\")\n    @pytest.mark.xfail(raises=ValueError)\n    def test_02(self):\n        if isinstance('1234', int) is not True:\n>           raise TypeError(\"传入参数非整数\")\nE           TypeError: 传入参数非整数\n\ntest_03_mark_for_allure.py:66: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1627038693755,
+      "stop" : 1627038693755,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1627038693755,
+      "stop" : 1627038693755,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1627038693755,
+      "stop" : 1627038693755,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1627038708250,
+      "stop" : 1627038708250,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "story: story in class"
+  }, {
+    "name" : "feature",
+    "value" : "feature: test_03_mark, feature mark at class level"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.xfail(raises=<class 'ValueError'>)"
+  }, {
+    "name" : "suite",
+    "value" : "test_03_mark_for_allure"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMark"
+  }, {
+    "name" : "host",
+    "value" : "JULIZHOU-6JV5P"
+  }, {
+    "name" : "thread",
+    "value" : "19824-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_03_mark_for_allure"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "9822e64ed069ee0d",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 传入参数非整数",
+      "time" : {
+        "start" : 1627038117202,
+        "stop" : 1627038117202,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d4b0db18c9cf8cca",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 传入参数非整数",
+      "time" : {
+        "start" : 1627037559449,
+        "stop" : 1627037559449,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3c781319ea7dcc46",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 传入参数非整数",
+      "time" : {
+        "start" : 1627036719329,
+        "stop" : 1627036719329,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "@pytest.mark.xfail(raises=<class 'ValueError'>)" ]
+  },
+  "source" : "49adac8d5cca8884.json",
+  "parameterValues" : [ ]
+}

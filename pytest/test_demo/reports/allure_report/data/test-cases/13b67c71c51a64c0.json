@@ -1,0 +1,143 @@
+{
+  "uid" : "13b67c71c51a64c0",
+  "name" : "test_compare",
+  "fullName" : "test_01_assert#test_compare",
+  "historyId" : "65e447c31fbac14cd95f108e6c04b24f",
+  "time" : {
+    "start" : 1627038693984,
+    "stop" : 1627038693984,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert Foo实例对比:\n    值: 1 != 2",
+  "statusTrace" : "@allure.feature(\"test_assert\")\n    @allure.story(\"exampe_05 自定义断言对比/报错信息\")\n    def test_compare():\n        f1 = Foo(1)\n        f2 = Foo(2)\n>       assert f1 == f2\nE       assert Foo实例对比:\nE           值: 1 != 2\n\ntest_01_assert.py:74: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1627038693983,
+      "stop" : 1627038693983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1627038693755,
+      "stop" : 1627038693755,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1627038693755,
+      "stop" : 1627038693755,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1627038693755,
+      "stop" : 1627038693755,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_01_assert"
+  }, {
+    "name" : "host",
+    "value" : "JULIZHOU-6JV5P"
+  }, {
+    "name" : "thread",
+    "value" : "19824-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_01_assert"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f7d2f51a5b35a4d5",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert Foo实例对比:\n    值: 1 != 2",
+      "time" : {
+        "start" : 1627038104256,
+        "stop" : 1627038104256,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "cd2eef0c1747e704",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert Foo实例对比:\n    值: 1 != 2",
+      "time" : {
+        "start" : 1627037543392,
+        "stop" : 1627037543393,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b008127d33a560c3",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert Foo实例对比:\n    值: 1 != 2",
+      "time" : {
+        "start" : 1627036706980,
+        "stop" : 1627036706980,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "13b67c71c51a64c0.json",
+  "parameterValues" : [ ]
+}

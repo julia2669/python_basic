@@ -1,0 +1,103 @@
+{
+  "total" : 9,
+  "items" : [ {
+    "uid" : "91d1a095de9fc585ca6aa2ba215b9728",
+    "name" : "test_02_fixture",
+    "statistic" : {
+      "failed" : 6,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 18,
+      "unknown" : 0,
+      "total" : 25
+    }
+  }, {
+    "uid" : "e6ed5d6d1d509af2c470322ee944bb94",
+    "name" : "test_02_fixture_for_allure",
+    "statistic" : {
+      "failed" : 6,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 18,
+      "unknown" : 0,
+      "total" : 25
+    }
+  }, {
+    "uid" : "2860ba4c29b9b7b370f73f179f3d0c66",
+    "name" : "test_01_assert_for_allure",
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 10
+    }
+  }, {
+    "uid" : "0338e73d98ecb561ca68af5064dd65bd",
+    "name" : "test_06_cache",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 48,
+      "unknown" : 0,
+      "total" : 50
+    }
+  }, {
+    "uid" : "d61a2773e36440739877870076c1b421",
+    "name" : "test_01_assert",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "f6273a6c70f688c246c37ea58223999b",
+    "name" : "test_04_mock",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 3,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "63aad87cd305dec731300e57f6a9c58e",
+    "name" : "test_03_mark",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 2,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 8
+    }
+  }, {
+    "uid" : "126257d45291726494149614be6f0404",
+    "name" : "test_03_mark_for_allure",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 2,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 8
+    }
+  }, {
+    "uid" : "f7901e452a47bf8039d4b08eee2fd872",
+    "name" : "test_05_parametrize",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 4
+    }
+  } ]
+}

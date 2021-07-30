@@ -1,0 +1,210 @@
+{
+  "uid" : "3fb09d1a5a471f9c",
+  "name" : "test_2[mod2-2]",
+  "fullName" : "test_02_fixture_for_allure#test_2",
+  "historyId" : "88c987fdb8c5a599af24ea107f390a94",
+  "time" : {
+    "start" : 1627038707900,
+    "stop" : 1627038707900,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1627038693755,
+      "stop" : 1627038693755,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1627038707899,
+      "stop" : 1627038707899,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1627038693755,
+      "stop" : 1627038693755,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "modarg",
+    "time" : {
+      "start" : 1627038707871,
+      "stop" : 1627038707871,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1627038693755,
+      "stop" : 1627038693755,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "otherarg",
+    "time" : {
+      "start" : 1627038707899,
+      "stop" : 1627038707899,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "modarg::0",
+    "time" : {
+      "start" : 1627038707936,
+      "stop" : 1627038707937,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "otherarg::0",
+    "time" : {
+      "start" : 1627038707901,
+      "stop" : 1627038707901,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "feature: test_02_fixture"
+  }, {
+    "name" : "story",
+    "value" : "story: 使用fixture实例自动组织测试用例"
+  }, {
+    "name" : "suite",
+    "value" : "test_02_fixture_for_allure"
+  }, {
+    "name" : "host",
+    "value" : "JULIZHOU-6JV5P"
+  }, {
+    "name" : "thread",
+    "value" : "19824-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_02_fixture_for_allure"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "modarg",
+    "value" : "'mod2'"
+  }, {
+    "name" : "otherarg",
+    "value" : "2"
+  } ],
+  "links" : [ {
+    "name" : "test case: 03",
+    "url" : "case url",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "329ab93f8024db37",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627038116849,
+        "stop" : 1627038116849,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7d33ba59aed27dce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627037557059,
+        "stop" : 1627037557059,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "28146709f28a300e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627036719000,
+        "stop" : 1627036719001,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3fb09d1a5a471f9c.json",
+  "parameterValues" : [ "'mod2'", "2" ]
+}

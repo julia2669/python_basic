@@ -1,0 +1,17 @@
+pip install pytest-rerunfailures
+
+pytest --reruns 5 -s
+
+pytest --reruns 5 --reruns-delay 10 -s
+
+同样的，这个也可以指定重新运行的等待时间
+
+@pytest.mark.flaky(reruns=5, reruns_delay=2)
+def test_example():
+    import random
+    assert random.choice([True, False, False])
+
+
+不可以和fixture装饰器一起使用： @pytest.fixture()
+该插件与pytest-xdist的 --looponfail 标志不兼容
+该插件与核心--pdb标志不兼容

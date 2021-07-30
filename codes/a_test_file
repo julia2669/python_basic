@@ -1,0 +1,14 @@
+import os
+
+root = r'C:\Users\julizhou'
+
+def find_file(filename, path):
+    for root, dir, files in os.walk(path):
+        for file in files:
+            if filename.lower() in file.lower():
+                print(root,'\n',file)
+                print('-----'*20)
+
+
+# find_file('API', root)
+find_file('db.json', root)

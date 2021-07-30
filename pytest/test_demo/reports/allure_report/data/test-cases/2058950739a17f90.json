@@ -1,0 +1,146 @@
+{
+  "uid" : "2058950739a17f90",
+  "name" : "test_num[17]",
+  "fullName" : "test_06_cache#test_num",
+  "historyId" : "9d9793655b91929c904530406c7c8473",
+  "time" : {
+    "start" : 1627038709119,
+    "stop" : 1627038709119,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "Failed: bad luck",
+  "statusTrace" : "i = 17\n\n    @pytest.mark.parametrize(\"i\",range(30))\n    def test_num(i):\n        if i in (17,25,30):\n>          pytest.fail(\"bad luck\")\nE          Failed: bad luck\n\ntest_06_cache.py:19: Failed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1627038693755,
+      "stop" : 1627038693755,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1627038693755,
+      "stop" : 1627038693755,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1627038709118,
+      "stop" : 1627038709118,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1627038693755,
+      "stop" : 1627038693755,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_06_cache"
+  }, {
+    "name" : "host",
+    "value" : "JULIZHOU-6JV5P"
+  }, {
+    "name" : "thread",
+    "value" : "19824-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_06_cache"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "i",
+    "value" : "17"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "9303563133e516d0",
+      "status" : "failed",
+      "statusDetails" : "Failed: bad luck",
+      "time" : {
+        "start" : 1627038118099,
+        "stop" : 1627038118099,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "93d3c39cc288aede",
+      "status" : "failed",
+      "statusDetails" : "Failed: bad luck",
+      "time" : {
+        "start" : 1627037560371,
+        "stop" : 1627037560371,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6d1dec20292e69d6",
+      "status" : "failed",
+      "statusDetails" : "Failed: bad luck",
+      "time" : {
+        "start" : 1627036720059,
+        "stop" : 1627036720059,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "2058950739a17f90.json",
+  "parameterValues" : [ "17" ]
+}

@@ -1,0 +1,149 @@
+{
+  "uid" : "9807e43302ae7abd",
+  "name" : "test_ehlo[smtp.gmail.com]",
+  "fullName" : "test_02_fixture_for_allure#test_ehlo",
+  "historyId" : "9f28eb0c4a19b367108e18f146fcbf07",
+  "time" : {
+    "start" : 1627037555641,
+    "stop" : 1627037555880,
+    "duration" : 239
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 0",
+  "statusTrace" : "smtp_connection = <smtplib.SMTP object at 0x00000270E4A97108>\n\n    @allure.feature(\"test_02_fixture\")\n    @allure.story(\"Fixtures参数化\")\n    def test_ehlo(smtp_connection):\n        response,msg = smtp_connection.ehlo()\n        assert response == 250\n        assert b\"smtp.gmail.com\" in msg\n>       assert 0  # for demo purposes\nE       assert 0\n\ntest_02_fixture_for_allure.py:155: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "smtp_connection",
+    "time" : {
+      "start" : 1627037555138,
+      "stop" : 1627037555640,
+      "duration" : 502
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1627037543208,
+      "stop" : 1627037543208,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1627037543207,
+      "stop" : 1627037543207,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1627037555640,
+      "stop" : 1627037555640,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1627037543208,
+      "stop" : 1627037543208,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "smtp_connection::0",
+    "time" : {
+      "start" : 1627037555908,
+      "stop" : 1627037555909,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Fixtures参数化"
+  }, {
+    "name" : "feature",
+    "value" : "test_02_fixture"
+  }, {
+    "name" : "suite",
+    "value" : "test_02_fixture_for_allure"
+  }, {
+    "name" : "host",
+    "value" : "JULIZHOU-6JV5P"
+  }, {
+    "name" : "thread",
+    "value" : "4280-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_02_fixture_for_allure"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "smtp_connection",
+    "value" : "'smtp.gmail.com'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9807e43302ae7abd.json",
+  "parameterValues" : [ "'smtp.gmail.com'" ]
+}

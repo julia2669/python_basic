@@ -1,0 +1,381 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: 值为奇数,应为偶数\nassert 1 == 0\n  +1\n  -0",
+      "children" : [ {
+        "name" : "test_return_message",
+        "uid" : "da08f00f35ac6764",
+        "parentUid" : "a4686b520890bef43f0d7ea9c7553558",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627036707009,
+          "stop" : 1627036707009,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_return_message",
+        "uid" : "664b290698ca5777",
+        "parentUid" : "a4686b520890bef43f0d7ea9c7553558",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038693767,
+          "stop" : 1627038693767,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_return_message",
+        "uid" : "b49fdc2a713e0807",
+        "parentUid" : "a4686b520890bef43f0d7ea9c7553558",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038694027,
+          "stop" : 1627038694028,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a4686b520890bef43f0d7ea9c7553558"
+    }, {
+      "name" : "AssertionError: assert Foo实例对比:\n    值: 1 != 2",
+      "children" : [ {
+        "name" : "test_compare",
+        "uid" : "13b67c71c51a64c0",
+        "parentUid" : "ac99f781196f58436d2afa4008ee49f1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038693984,
+          "stop" : 1627038693984,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ac99f781196f58436d2afa4008ee49f1"
+    }, {
+      "name" : "AssertionError: assert <test_demo.te...001E1A8E64A88> == <test_demo.te...001E1A8E64988>\n  +<test_demo.test_01_assert_for_allure.Foo object at 0x000001E1A8E64A88>\n  -<test_demo.test_01_assert_for_allure.Foo object at 0x000001E1A8E64988>",
+      "children" : [ {
+        "name" : "test_compare",
+        "uid" : "d2422f2103e56a8d",
+        "parentUid" : "c37fa350adccffbfcf492ac520bddd5b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038694096,
+          "stop" : 1627038694096,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c37fa350adccffbfcf492ac520bddd5b"
+    }, {
+      "name" : "AssertionError: assert 10 < 10",
+      "children" : [ {
+        "name" : "test_fixture_scope_module01",
+        "uid" : "743d24ffbdb85027",
+        "parentUid" : "d788ec854bb35ceeee1a787b0eb4f316",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038694156,
+          "stop" : 1627038694156,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_fixture_scope_module02",
+        "uid" : "4c2c2bd0f7d9e893",
+        "parentUid" : "d788ec854bb35ceeee1a787b0eb4f316",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038694180,
+          "stop" : 1627038694180,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d788ec854bb35ceeee1a787b0eb4f316"
+    }, {
+      "name" : "AssertionError: assert 55 > 100",
+      "children" : [ {
+        "name" : "test_fixture_scope_function01",
+        "uid" : "f9c9636560ce3b14",
+        "parentUid" : "5b353b66e43a03b7218a32ec0e9f42e4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038694201,
+          "stop" : 1627038694202,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5b353b66e43a03b7218a32ec0e9f42e4"
+    }, {
+      "name" : "AssertionError: assert 33 > 100",
+      "children" : [ {
+        "name" : "test_fixture_scope_function02",
+        "uid" : "4c41e8bc8291a68c",
+        "parentUid" : "f221fc8ef1fe802380f926e6f6f19304",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038694233,
+          "stop" : 1627038694234,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f221fc8ef1fe802380f926e6f6f19304"
+    }, {
+      "name" : "AssertionError: assert 0",
+      "children" : [ {
+        "name" : "test_ehlo[smtp.gmail.com]",
+        "uid" : "e16410050af8fe17",
+        "parentUid" : "c9c77d7ae15b4ab6e63220cefc19b68f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038698610,
+          "stop" : 1627038698844,
+          "duration" : 234
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'smtp.gmail.com'" ]
+      }, {
+        "name" : "test_ehlo[smtp.gmail.com]",
+        "uid" : "110920db7c148f83",
+        "parentUid" : "c9c77d7ae15b4ab6e63220cefc19b68f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038706380,
+          "stop" : 1627038706618,
+          "duration" : 238
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'smtp.gmail.com'" ]
+      } ],
+      "uid" : "c9c77d7ae15b4ab6e63220cefc19b68f"
+    }, {
+      "name" : "AssertionError: assert b'smtp.gmail.com' in b'mail.python.org\\nPIPELINING\\nSIZE 51200000\\nETRN\\nSTARTTLS\\nAUTH DIGEST-MD5 NTLM CRAM-MD5\\nENHANCEDSTATUSCODES\\n8BITMIME\\nDSN\\nSMTPUTF8\\nCHUNKING'",
+      "children" : [ {
+        "name" : "test_ehlo[mail.python.org]",
+        "uid" : "bfb6263ca0633809",
+        "parentUid" : "fc18f8090ebcded47aa199cc4a06b0a9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038699777,
+          "stop" : 1627038700034,
+          "duration" : 257
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'mail.python.org'" ]
+      }, {
+        "name" : "test_ehlo[mail.python.org]",
+        "uid" : "7b4ce2d6ab6a7637",
+        "parentUid" : "fc18f8090ebcded47aa199cc4a06b0a9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038707404,
+          "stop" : 1627038707683,
+          "duration" : 279
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'mail.python.org'" ]
+      } ],
+      "uid" : "fc18f8090ebcded47aa199cc4a06b0a9"
+    }, {
+      "name" : "AssertionError: assert 20 < 10",
+      "children" : [ {
+        "name" : "test_fixture_scope_module01",
+        "uid" : "2f5aa31aec6aa0aa",
+        "parentUid" : "6f6203c319ee26bf8d8aa79db87b2652",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038700404,
+          "stop" : 1627038700404,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_fixture_scope_module02",
+        "uid" : "618e6fe360a7ec27",
+        "parentUid" : "6f6203c319ee26bf8d8aa79db87b2652",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038700430,
+          "stop" : 1627038700430,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6f6203c319ee26bf8d8aa79db87b2652"
+    }, {
+      "name" : "AssertionError: assert 44 > 100",
+      "children" : [ {
+        "name" : "test_fixture_scope_function01",
+        "uid" : "d4e26673682043ab",
+        "parentUid" : "555d3e2ae59cec028b53524ab0e30804",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038702470,
+          "stop" : 1627038702470,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "555d3e2ae59cec028b53524ab0e30804"
+    }, {
+      "name" : "AssertionError: assert 72 > 100",
+      "children" : [ {
+        "name" : "test_fixture_scope_function02",
+        "uid" : "705c514089897b2",
+        "parentUid" : "ea13c25f0d941dabf68f882846b36bfd",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038702523,
+          "stop" : 1627038702523,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ea13c25f0d941dabf68f882846b36bfd"
+    }, {
+      "name" : "Failed: bad luck",
+      "children" : [ {
+        "name" : "test_num[17]",
+        "uid" : "2058950739a17f90",
+        "parentUid" : "1d0550c9603675e5bac2e77383429e97",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038709119,
+          "stop" : 1627038709119,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "17" ]
+      }, {
+        "name" : "test_num[25]",
+        "uid" : "d3de14610ea22070",
+        "parentUid" : "1d0550c9603675e5bac2e77383429e97",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627038709253,
+          "stop" : 1627038709253,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "25" ]
+      } ],
+      "uid" : "1d0550c9603675e5bac2e77383429e97"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: 传入参数非整数",
+      "children" : [ {
+        "name" : "test_02",
+        "uid" : "40b2f5a8e762592e",
+        "parentUid" : "e0e6ab0c903adecf0f468fe5b9253997",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627038708138,
+          "stop" : 1627038708138,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_02",
+        "uid" : "49adac8d5cca8884",
+        "parentUid" : "e0e6ab0c903adecf0f468fe5b9253997",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627038708251,
+          "stop" : 1627038708251,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e0e6ab0c903adecf0f468fe5b9253997"
+    }, {
+      "name" : "ModuleNotFoundError: No module named 'demo_mock'",
+      "children" : [ {
+        "name" : "test_get_foo2",
+        "uid" : "47f4bcc0b7b9d32",
+        "parentUid" : "ec3b9865075f22fc61068ea3c70c90ba",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627038708301,
+          "stop" : 1627038708303,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_get_foo3",
+        "uid" : "e8f90756a19e047e",
+        "parentUid" : "ec3b9865075f22fc61068ea3c70c90ba",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627038708438,
+          "stop" : 1627038708439,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_get_foo",
+        "uid" : "3b8d837886a50170",
+        "parentUid" : "ec3b9865075f22fc61068ea3c70c90ba",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627038708636,
+          "stop" : 1627038708637,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ec3b9865075f22fc61068ea3c70c90ba"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
