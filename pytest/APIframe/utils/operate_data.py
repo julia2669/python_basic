@@ -54,7 +54,7 @@ class OperateData():
         '''
         df = pd.read_excel(FilePath(filedir,file),sheet_name=sheet_name)
         for i in df:
-            df[i]=df[i].to_dict(orient='index')
+            df[i]=df[i].fillna('None').to_dict(orient='index')
             df[i] = self.dic_to_list(df[i])
             # print(df[i].T)
         df = self.dic_to_list(df)
